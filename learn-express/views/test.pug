@@ -1,0 +1,16 @@
+- const node = 'Node.js'
+
+include testHeader
+
+h1= title
+p Welcome to #{title}
+h2=`${node} with Pug`
+
+button(class=title , type ='submit') #{localVar}
+input(placeholder=title + ' 연습')
+
+p!='<strong>excape!</string>'
+
+ul
+  each fruit, index in ['apple', 'banana', 'orange']
+    li=`${index+1}번째 ${fruit}`
